@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Optina Rule for Reading Scripture</title>
+  <meta name="description" content="Choose a start date and download a repeating calendar for the Optina Rule: the New Testament every 89 days, and one kathisma of the Psalter every day.">
+  <meta name="theme-color" content="#7a1f2b">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#plan-heading">Skip to the calendar</a>
+  <div class="sheet">
+    <span class="corner tl" aria-hidden="true"></span>
+    <span class="corner tr" aria-hidden="true"></span>
+    <span class="corner bl" aria-hidden="true"></span>
+    <span class="corner br" aria-hidden="true"></span>
+
+    <header class="banner">
+      <svg class="cross" viewBox="0 0 64 104" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4.2">
+          <line x1="32" y1="2" x2="32" y2="98"/>
+          <line x1="18.6" y1="15.4" x2="45.4" y2="15.4"/>
+          <line x1="3.2" y1="32.7" x2="60.8" y2="32.7"/>
+          <line x1="15.7" y1="71.1" x2="48.3" y2="78.8"/>
+        </g>
+      </svg>
+      <h1>
+        <span class="title-main">The Optina Rule</span>
+        <span class="title-rest">for Reading Scripture</span>
+      </h1>
+      <p class="lede">The New Testament every 89 days · the Psalter every 20 days</p>
+    </header>
+
+    <div class="ornament" aria-hidden="true"><span></span><span></span><span></span></div>
+
+    <main>
+      <section aria-labelledby="rule-heading">
+        <h2 id="rule-heading">The rule</h2>
+        <p class="intro">The Optina Monastery rule is a daily reading of Scripture. The New Testament is read straight through every 89 days, four times a year, and the Psalter more than once a month.</p>
+        <ol class="rule">
+          <li>Each day read one chapter from the Gospels in order, beginning with Matthew and ending with John.</li>
+          <li>Along with the Gospel, each day read two chapters from the Apostol (the rest of the New Testament), beginning with the Acts of the Apostles and ending with the Revelation of St. John the Theologian. The last seven chapters of Revelation are read together on day 83. Days 84 to 89, while John is finished, are marked “Apostol complete.”</li>
+          <li>Read one kathisma from the Psalter each day. There are twenty kathismata, so the Psalter repeats every 20 days, on its own, whether or not that lines up with day 89. Psalm numbers follow the Septuagint (LXX), as in Orthodox Psalters.</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="plan-heading">
+        <div class="howto">
+          <h2 id="plan-heading"><span>Make your calendar</span></h2>
+          <ul class="gems">
+            <li>Choose the day you will begin. That date is Day 1, whichever day of the week it is.</li>
+            <li>Each day, read one Gospel chapter, the Apostol portion, and one kathisma.</li>
+            <li>If you are already partway through the Psalter, start at that kathisma. The Gospels still begin at Matthew 1.</li>
+          </ul>
+          <noscript>
+            <p class="noscript">This page builds the calendar file in your browser and needs JavaScript. Nothing you choose is sent to a server.</p>
+          </noscript>
+          <form id="plan-form" action="#plan-heading">
+            <div class="fields">
+              <div class="field">
+                <label for="start-date">Start date</label>
+                <input id="start-date" name="start" type="date" required autocomplete="off">
+                <p class="hint">Day 1 falls on this date, then repeats every 89 days.</p>
+              </div>
+              <div class="field">
+                <label for="start-kathisma">Begin the Psalter at</label>
+                <select id="start-kathisma" name="kathisma" required>
+                  <option value="1" selected>Kathisma 1</option>
+                </select>
+                <p class="hint">Kathisma 1 is the usual place to begin. The twenty then continue in order.</p>
+              </div>
+            </div>
+            <p id="form-error" class="error" role="alert"></p>
+          </form>
+        </div>
+
+        <div class="preview-band">
+          <h3 id="preview-heading">First seven days</h3>
+        </div>
+        <ol id="preview" class="preview" aria-labelledby="preview-heading"></ol>
+
+        <button type="submit" form="plan-form" id="download" class="button" disabled>Download calendar file</button>
+        <p id="file-note" class="file-note">The file holds 109 all-day events: the 89 days of the New Testament cycle, and the 20 kathismata. Each repeats forever. They are marked free, and they have no alarms. On an iPhone, Safari should offer to add them to Calendar.</p>
+        <p id="download-status" class="hint" role="status"></p>
+      </section>
+
+      <div class="ornament" aria-hidden="true"><span></span><span></span><span></span></div>
+
+      <section aria-labelledby="import-heading">
+        <h2 id="import-heading">Add it to your calendar</h2>
+        <p>Import the file into a new calendar used only for this plan. The readings stay separate, and you can delete them all at once if you later choose another start date.</p>
+
+        <h3>Google Calendar</h3>
+        <ol class="steps">
+          <li>On a computer, open Google Calendar. The phone app cannot import a file.</li>
+          <li>Open Settings, then <strong>Add calendar</strong>, then <strong>Create new calendar</strong>. Name it Optina Rule.</li>
+          <li>Open Settings, then <strong>Import &amp; export</strong>. Choose the downloaded file and the Optina Rule calendar, then Import.</li>
+        </ol>
+
+        <h3>Apple Calendar</h3>
+        <ol class="steps">
+          <li>On an iPhone or iPad, open Calendar, tap Calendars, then Add Calendar, and name it Optina Rule.</li>
+          <li>Come back here and tap <strong>Download calendar file</strong>. Safari should ask to add the events. Choose Add All, and pick the Optina Rule calendar if you are asked.</li>
+          <li>On a Mac, choose File, then New Calendar. Double-click the downloaded file and add the events to that calendar.</li>
+        </ol>
+
+        <h3>Outlook</h3>
+        <ol class="steps">
+          <li>Create a calendar named Optina Rule.</li>
+          <li>In Outlook on the web, choose <strong>Add calendar</strong>, then <strong>Upload from file</strong>, and select that calendar.</li>
+          <li>In Outlook for Windows, choose File, then Open &amp; Export, then Import/Export, then <strong>Import an iCalendar (.ics) file</strong>.</li>
+        </ol>
+
+        <p class="hint">Importing the same file twice can duplicate the readings. To begin on a different day, delete the Optina Rule calendar and import the new file. If a reminder still appears, turn notifications off for that calendar. The events themselves have none.</p>
+      </section>
+
+      <div class="ornament" aria-hidden="true"><span></span><span></span><span></span></div>
+
+      <section aria-labelledby="kathisma-heading">
+        <h2 id="kathisma-heading">The twenty kathismata</h2>
+        <p class="kathisma-note">Psalm numbering follows the Septuagint (LXX), as in Orthodox Psalters.</p>
+        <ul class="kathismata" id="kathisma-list"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>The Optina Monastery rule for reading Scripture, as shared by NEPSIS (@nepsisblog).</p>
+      <p>The calendar file is created in your browser. Your dates are not sent anywhere.</p>
+    </footer>
+  </div>
+  <script src="readings.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
