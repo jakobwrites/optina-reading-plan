@@ -192,6 +192,17 @@ h1 {
   color: var(--muted);
 }
 
+.days-link {
+  margin: 0.85rem 0 0;
+  text-align: center;
+  font-family: var(--display);
+  font-size: 1.35rem;
+}
+
+.days-link a {
+  color: var(--burgundy);
+}
+
 .ornament {
   display: flex;
   align-items: center;
